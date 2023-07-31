@@ -11,7 +11,7 @@ export const mysqlConfig: DataSourceOptions = {
   username: process.env.DB_USER,
   password: process.env.DB_PASS,
   database: process.env.DB_NAME,
-  synchronize: false,
+  synchronize: true,
   migrationsRun: true,
   logging: process.env.NODE_ENV === 'local' ? true : ['error', 'warn', 'info'],
   entities: [join(__dirname, '/../**/**.entity{.ts,.js}')],
