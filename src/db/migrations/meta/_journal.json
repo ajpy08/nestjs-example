@@ -1,0 +1,20 @@
+{
+  "version": "5",
+  "dialect": "mysql",
+  "entries": [
+    {
+      "idx": 0,
+      "version": "5",
+      "when": 1691104835264,
+      "tag": "0000_nervous_chameleon",
+      "breakpoints": true
+    },
+    {
+      "idx": 1,
+      "version": "5",
+      "when": 1691106125847,
+      "tag": "0001_same_loners",
+      "breakpoints": true
+    }
+  ]
+}
