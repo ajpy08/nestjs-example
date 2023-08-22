@@ -47,6 +47,8 @@ export class UsersService {
       throw new UnprocessableEntityException('User not deleted');
     }
 
-    return 'User deleted';
+    return {
+      message: 'User deleted',
+    };
   }
 }
