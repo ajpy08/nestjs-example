@@ -24,8 +24,8 @@ export class UsersService {
     return await this.usersRepository.find({ where: { active: true } });
   }
 
-  async findOne(id: number): Promise<User[]> {
-    const userExist = await this.usersRepository.find({
+  async findOne(id: number): Promise<User> {
+    const userExist = await this.usersRepository.findOne({
       where: { id, active: true },
     });
     if (!userExist) {
